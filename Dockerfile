@@ -23,7 +23,7 @@ RUN tar -xvf $TMP_DIR/$APPDEF_AGENT_TAR -C $TOMCAT_DIR/
 RUN mv $APPDEF_AGENT/ AppDefender
 RUN mkdir $TOMCAT_DIR/AppDefender/log
 RUN sed -i '264i\ #AppDefender Agent installation for Riches' $TOMCAT_DIR/bin/catalina.sh
-RUN sed -i '265i \CATALINA_OPTS=" -javaagent:$CATALINA_HOME/AppDefender/lib/FortifyAgent.jar $CATALINA_OPTS"' $TOMCAT_DIR/bin/catalina.sh
+RUN sed -i '265i \CATALINA_OPTS=" -javaagent:$CATALINA_HOME/AppDefender/lib.latest/FortifyAgent.jar $CATALINA_OPTS"' $TOMCAT_DIR/bin/catalina.sh
 
 #cleanup temp dir
 RUN rm -rf $TMP_DIR
