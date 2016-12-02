@@ -1,6 +1,10 @@
 # appdefender
 riches web application with AppDefender Agent
 
+***needs a little work still***
+- persist state of registration with service
+- tail log files to see ssn/cn logging issues
+
 uses tomcat:7.0.73-jre8-alpine docker image as the base
 
 runs Riches war with AppDefender Agent
