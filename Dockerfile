@@ -1,7 +1,7 @@
 FROM tomcat:7.0.73-jre8-alpine
 MAINTAINER "chunt"
 
-#args used during building of this container
+#args used during building of this image
 ARG MY_FILES_DIR=files
 ARG TMP_DIR=/root/mytemp
 ARG APPDEF_AGENT="AppDefender_Agent"
